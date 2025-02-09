@@ -1,14 +1,14 @@
 {
-    "name": "pykam/random-api",
+    "name": "pykam/random",
     "description": "REST API for generating random number",
     "autoload": {
         "psr-4": {
-            "Pykam\\RandomApi\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Albert",
+            "name": "Albert Kuular",
             "email": "albert.kuular@gmail.com"
         }
     ],
