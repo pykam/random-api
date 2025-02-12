@@ -4,8 +4,18 @@ namespace App\Random;
 
 class RandomDigit
 {
-    public function get(): int
+    public $id;
+    public $digit;
+
+    public function __construct(int $id, int $digit=0)
     {
-        return rand();
+        $this->id = $id;
+        
+        if ($digit === 0) {
+            $this->digit = rand();
+        } else {
+            $this->digit = $digit;
+        }
     }
+
 }

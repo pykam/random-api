@@ -1,7 +1,6 @@
 <?php
 
-use App\Api\GetRandom;
-use App\Api\GetById;
+use App\Api\Controller;
 use App\Api\Response;
 
 require __DIR__ . '/vendor/autoload.php';
@@ -23,7 +22,7 @@ if (isset($uri['query'])) {
 switch ($path) {
 
     case 'random':
-        (new GetRandom())->digit();
+        (new Controller())->digit();
         break;
 
     case 'get':
@@ -33,7 +32,7 @@ switch ($path) {
             exit;
         }
 
-        (new GetById())->get(intval($query));
+        (new Controller())->get(intval($query));
         break;
     
     default:
