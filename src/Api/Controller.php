@@ -6,6 +6,9 @@ use App\Random\RandomDigit;
 use App\Data\DigitStore;
 use App\Api\Response;
 
+/**
+ * 
+ */
 class Controller
 {
     
